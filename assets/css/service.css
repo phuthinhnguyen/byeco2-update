@@ -1,0 +1,204 @@
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+input, textarea {
+  border: 1px solid #9AA0A0;
+}
+
+.banner {
+  max-width: 100%;
+  margin: auto;
+  height: 316px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .text {
+  text-align: center;
+}
+.banner .text h1 {
+  font-family: "Anybody";
+  font-weight: bold;
+  color: #20A049;
+}
+.banner .text p {
+  font-family: "Inter";
+  font-size: medium;
+  color: #FAFAFC;
+  max-width: 552px;
+}
+
+.filters-container {
+  margin: auto;
+  padding: 0 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  max-width: 100%;
+}
+.filters-container .filters-wrap {
+  list-style-type: none;
+  position: relative;
+  width: 360px;
+  display: table;
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+}
+.filters-container .filters-wrap .active {
+  color: #20A049;
+  border-top: 1px solid #20A049;
+}
+.filters-container .filters-wrap li {
+  font-family: "Inter";
+  display: table-cell;
+  max-width: 184px;
+  cursor: pointer;
+  position: relative;
+  font-size: medium;
+  color: #323338;
+  padding: 10px 20px;
+}
+.filters-container .filters-content {
+  margin-top: 50px;
+}
+.filters-container .filters-content .row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.filters-container .filters-content .row .all {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 50%;
+  max-width: 33%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.filters-container .filters-content .row .all .single-menu .title-wrap {
+  display: flex !important;
+  justify-content: space-around !important;
+  flex-direction: column;
+  align-items: center;
+  height: 423px;
+  text-align: center;
+  box-shadow: 0px 10px 30px 0px rgba(153, 153, 153, 0.2);
+}
+.filters-container .filters-content .row .all .single-menu .title-wrap div {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  padding: 0 10px;
+}
+.filters-container .filters-content .row .all .single-menu .title-wrap div img {
+  width: 74px;
+  height: 64px;
+  margin-bottom: 20px;
+}
+.filters-container .filters-content .row .all .single-menu .title-wrap div h3 {
+  font-family: "Anybody";
+  font-weight: bold;
+}
+.filters-container .filters-content .row .all .single-menu .title-wrap div p {
+  color: #9AA0A0;
+  text-align: center;
+  padding: 10px;
+}
+.filters-container .filters-content .row .all .single-menu .title-wrap .img-service-hover {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  left: 15px;
+  top: 0;
+}
+.filters-container .filters-content .row .all .single-menu .title-wrap:hover {
+  color: #FAFAFC;
+  cursor: pointer;
+}
+.filters-container .filters-content .row .all .single-menu .title-wrap:hover .img-service-hover {
+  opacity: 1;
+}
+.filters-container .filters-content .row .all .single-menu .title-wrap:hover div p {
+  color: #FAFAFC;
+}
+.filters-container .filters-content .row .all .single-menu .title-wrap .img-service-hover {
+  width: 98%;
+}
+.filters-container .filters-content .row .all .single-menu .title-wrap div p {
+  padding: 20px;
+}
+
+.pagination {
+  height: 39px;
+  display: flex;
+  max-width: 300px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 80px;
+}
+.pagination img {
+  width: 22px;
+  height: 22px;
+}
+.pagination div {
+  display: flex;
+  -moz-column-gap: 9px;
+       column-gap: 9px;
+  align-items: center;
+}
+.pagination div a {
+  text-decoration: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 4px;
+  line-height: 38px;
+  background-color: #E0E0E0;
+  text-align: center;
+  color: #060810;
+  transition: 0.3s;
+}
+.pagination div a:hover {
+  background-color: #060810;
+  color: #E0E0E0;
+}
+
+@media screen and (max-width: 991px) {
+  .filters-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .filters-container .filters-content .row {
+    max-width: 99%;
+    margin: auto;
+  }
+  .filters-container .filters-content .row .all {
+    max-width: 48%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .filters-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .filters-container .filters-wrap #all-responsive {
+    display: none;
+  }
+  .filters-container .filters-content .row .all {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,94 @@
+@import "font";
+@import "variable";
+@import "mixin";
+img{
+    width: 100%;
+    height: auto;
+}
+body{
+    box-sizing: border-box;
+}
+input,textarea{
+    border: 1px solid $dark-03;
+}
+
+// banner
+.banner{
+   @include banner;
+}
+
+// filter
+.filters-container{
+   @include filter;
+   .filters-content{
+    .row{
+        .all{
+            .single-menu{
+                .title-wrap{
+                    @include ourservice-item;
+                    .img-service-hover{
+                        width: 98%;
+                    }
+                    div{
+                        p{
+                            padding: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   }
+}
+
+// pagination
+.pagination{
+   @include pagination;
+}
+
+
+@media screen and (max-width:991px){
+    .filters-container{
+        padding-left: 10px;
+        padding-right: 10px;
+        .filters-content{
+            .row{
+                max-width: 99%;
+                margin: auto;
+                .all{
+                    max-width: 48%;
+                    .single-menu{
+                        .tittle-wrap{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:575px){
+    .filters-container{
+        padding-left: 10px;
+        padding-right: 10px;
+        .filters-wrap{
+            #all-responsive{
+                display: none;
+            }
+        }
+        .filters-content{
+            .row{
+                .all{
+                    max-width: 100%;
+                    .single-menu{
+                        .tittle-wrap{
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
