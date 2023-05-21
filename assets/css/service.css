@@ -95,9 +95,15 @@ input, textarea {
   text-align: center;
   box-shadow: 0px 10px 30px 0px rgba(153, 153, 153, 0.2);
 }
-.filters-container .filters-content .row .all .single-menu .title-wrap div {
+.filters-container .filters-content .row .all .single-menu .title-wrap .img-service-hover {
   position: absolute;
-  top: 20%;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  left: 3%;
+}
+.filters-container .filters-content .row .all .single-menu .title-wrap div {
   width: 100%;
   text-align: center;
   padding: 0 10px;
@@ -116,27 +122,16 @@ input, textarea {
   text-align: center;
   padding: 10px;
 }
-.filters-container .filters-content .row .all .single-menu .title-wrap .img-service-hover {
-  position: absolute;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  transition: 0.5s;
-  left: 15px;
-  top: 0;
-}
 .filters-container .filters-content .row .all .single-menu .title-wrap:hover {
   color: #FAFAFC;
   cursor: pointer;
 }
 .filters-container .filters-content .row .all .single-menu .title-wrap:hover .img-service-hover {
   opacity: 1;
+  z-index: -1;
 }
 .filters-container .filters-content .row .all .single-menu .title-wrap:hover div p {
   color: #FAFAFC;
-}
-.filters-container .filters-content .row .all .single-menu .title-wrap .img-service-hover {
-  width: 98%;
 }
 .filters-container .filters-content .row .all .single-menu .title-wrap div p {
   padding: 20px;
@@ -197,8 +192,5 @@ input, textarea {
   }
   .filters-container .filters-wrap #all-responsive {
     display: none;
-  }
-  .filters-container .filters-content .row .all {
-    max-width: 100%;
   }
 }

@@ -349,9 +349,15 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   transition: 1s;
   box-shadow: 0px 10px 30px 0px rgba(153, 153, 153, 0.2);
 }
-.content-ourservices .content-ourservices-bottom .item div {
+.content-ourservices .content-ourservices-bottom .item .img-service-hover {
   position: absolute;
-  top: 20%;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  left: 3%;
+}
+.content-ourservices .content-ourservices-bottom .item div {
   width: 100%;
   text-align: center;
   padding: 0 10px;
@@ -370,24 +376,19 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
   text-align: center;
   padding: 10px;
 }
-.content-ourservices .content-ourservices-bottom .item .img-service-hover {
-  position: absolute;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  transition: 0.5s;
-  left: 15px;
-  top: 0;
-}
 .content-ourservices .content-ourservices-bottom .item:hover {
   color: #FAFAFC;
   cursor: pointer;
 }
 .content-ourservices .content-ourservices-bottom .item:hover .img-service-hover {
   opacity: 1;
+  z-index: -1;
 }
 .content-ourservices .content-ourservices-bottom .item:hover div p {
   color: #FAFAFC;
+}
+.content-ourservices .content-ourservices-bottom .item div {
+  padding-top: 90px;
 }
 
 #section-counter {
