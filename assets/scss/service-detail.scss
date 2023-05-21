@@ -1,0 +1,74 @@
+@import "font";
+@import "variable";
+@import "mixin";
+img{
+    width: 100%;
+    height: auto;
+}
+body{
+    box-sizing: border-box;
+}
+input,textarea{
+    border: 1px solid $dark-03;
+}
+
+// banner
+.banner{
+   @include banner;
+   justify-content: flex-start;
+   height: 124px;
+   padding-left: 103px;
+}
+
+// content
+.service-detail-content{
+    width: 100%;
+    padding: 140px;
+    h2{
+        @include font($fontAnybody);
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+    .content-wrap{
+        display: flex;
+        width: 100%;
+        column-gap: 24px;
+        .img{
+            flex: 1.5;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .text{
+            flex: 1;
+            @include font($fontInter);
+            font-size: 18px;
+        }
+    }
+}
+
+// pagination
+.pagination{
+   @include pagination;
+}
+
+@media screen and (max-width:1300px){
+    .service-detail-content{
+        padding: 100px 50px;
+    }
+}
+@media screen and (max-width:991px){
+    .service-detail-content{
+        .content-wrap{
+            display: block;
+            .text{
+                margin-top: 20px;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+
+
