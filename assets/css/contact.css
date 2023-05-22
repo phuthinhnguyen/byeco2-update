@@ -71,18 +71,22 @@ input, textarea {
 }
 .content-ourcontact .content-ourcontact-top p:last-of-type {
   color: #EA6B39;
+  font-weight: 600;
 }
 .content-ourcontact .content-ourcontact-bottom {
   margin-top: 40px;
   padding: 24px 32px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
 .content-ourcontact .content-ourcontact-bottom .item {
   height: 116px;
-  max-width: 242px;
+  max-width: 280px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   -moz-column-gap: 10px;
        column-gap: 10px;
 }
@@ -194,9 +198,7 @@ input, textarea {
 
 @media screen and (max-width: 1199px) {
   .content-ourcontact .content-ourcontact-bottom {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 24px 10px;
   }
   .content-getintouchandmap {
     flex-direction: column;
@@ -206,7 +208,15 @@ input, textarea {
     margin-top: 40px;
   }
 }
+@media screen and (max-width: 991px) {
+  .content-ourcontact .content-ourcontact-bottom {
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 767px) {
+  .content-ourcontact {
+    padding-bottom: 0;
+  }
   .content-getintouchandmap {
     height: 1350px;
     padding-left: 10px;
@@ -220,6 +230,12 @@ input, textarea {
   }
   .content-getintouchandmap .item1 .item1-wrap .content-getintouch-center .item1 input:last-of-type {
     margin-top: 20px;
+  }
+}
+@media screen and (max-width: 662px) {
+  .content-ourcontact .content-ourcontact-bottom .item {
+    justify-content: flex-start;
+    width: 300px;
   }
 }
 @media screen and (max-width: 575px) {

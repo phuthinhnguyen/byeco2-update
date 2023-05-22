@@ -130,8 +130,7 @@ nav{
                         }
                         &:hover{
                             color: $primary-green;
-                        }
-                        
+                        } 
                     }
                     .menu-dropdown
                     {
@@ -1138,7 +1137,7 @@ footer{
             }
             .navigation,.quicklinks{
                 // max-width: 141px;
-                min-width: 140px;
+                min-width: 145px;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
