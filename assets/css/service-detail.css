@@ -65,6 +65,10 @@ input, textarea {
   flex: 1;
   font-family: "Inter";
   font-size: 18px;
+  text-align: justify;
+}
+.service-detail-content .content-wrap .text ul li {
+  margin-top: 10px;
 }
 
 .pagination {
@@ -113,6 +117,5 @@ input, textarea {
   }
   .service-detail-content .content-wrap .text {
     margin-top: 20px;
-    text-align: justify;
   }
 }

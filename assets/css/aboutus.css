@@ -60,6 +60,7 @@ input, textarea {
   display: flex;
   -moz-column-gap: 20px;
        column-gap: 20px;
+  max-width: 1400px;
 }
 .article .container a {
   width: 25px;
@@ -165,7 +166,7 @@ input, textarea {
 .aboutus-content1 .bottom {
   position: absolute;
   right: 0;
-  top: 380px;
+  top: 320px;
   width: 49%;
 }
 .aboutus-content1 .bottom p {
@@ -286,6 +287,10 @@ input, textarea {
 .ourexpertise p:last-of-type {
   color: #9AA0A0;
 }
+.ourexpertise p:not(:last-of-type) {
+  color: #EA6B39;
+  font-weight: 600;
+}
 
 .slide {
   max-width: 100%;
@@ -337,7 +342,11 @@ input, textarea {
   width: 70%;
   display: grid;
   grid-template-columns: auto auto auto;
+  row-gap: 50px;
   order: 0;
+}
+.ourclients .left img {
+  margin: auto;
 }
 .ourclients a {
   width: 5px;
@@ -351,8 +360,9 @@ input, textarea {
 .ourclients .right p {
   font-family: "Inter";
 }
-.ourclients .right p:first-of-type {
+.ourclients .right p:not(:last-of-type) {
   color: #EA6B39;
+  font-weight: 600;
 }
 .ourclients .right p:last-of-type {
   color: #9AA0A0;
@@ -371,6 +381,11 @@ input, textarea {
     width: 45%;
   }
 }
+@media screen and (max-width: 1210px) {
+  .aboutus-content1 .bottom {
+    top: 340px;
+  }
+}
 @media screen and (max-width: 1280px) {
   .aboutus-content1 .bottom {
     width: 40%;
@@ -379,10 +394,12 @@ input, textarea {
 @media screen and (max-width: 1180px) {
   .aboutus-content1 .bottom {
     width: 35%;
-    top: 430px;
   }
 }
 @media screen and (max-width: 1100px) {
+  .aboutus-content1 .center {
+    margin-top: 0;
+  }
   .aboutus-content1 .center .item {
     width: 250px;
     height: 252px;
@@ -390,7 +407,7 @@ input, textarea {
   .aboutus-content1 .bottom {
     height: 450px;
     width: 40%;
-    top: 450px;
+    top: 370px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -407,6 +424,7 @@ input, textarea {
   .aboutus-content1 .center {
     padding: 0 50px;
     position: static;
+    margin-top: -50px;
   }
   .aboutus-content1 .center .item {
     padding: 20px 10px;

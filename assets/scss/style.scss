@@ -2,6 +2,15 @@
 @import "variable";
 @import "mixin";
 
+[lang=en] [lang=vi],
+[lang=vi] [lang=en]
+/* [lang=fr-FR] [lang=en-GB],
+[lang=fr-FR] [lang=ja-JP],
+[lang=ja-JP] [lang=en-GB],
+[lang=ja-JP] [lang=fr-FR] */
+{
+    display: none !important;
+}
 img{
     width: 100%;
     height: auto;
@@ -136,6 +145,7 @@ nav{
                         .menu-dropdown-item
                         {
                             .menu-dropdown-item-content{
+                                cursor: pointer;
                                 a{
                                     .img-language{
                                         width: 20px;
@@ -584,6 +594,13 @@ nav{
     padding-bottom: 80px;
     .content-featuredproject-top{
         @include content-top;
+        p{
+            &:not(:last-of-type){
+                color: $primary-coral-50;
+                font-weight: 600;
+            }
+
+        }
     }
     .content-featuredproject-content{
         margin-top: 80px;

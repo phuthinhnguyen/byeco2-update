@@ -82,9 +82,17 @@
                         <a href=""><h6>Languages<img src="assets/image/index/nav-arrow.svg" alt=""></h6></a>
                         <div class="menu-dropdown">
                             <div class="menu-dropdown-item">
-                                <div class="menu-dropdown-item-content"><a href=""><img class="img-language" src="assets/image/index/us.svg" alt="">English</a></div>
-                                <div class="menu-dropdown-item-content"><a href=""><img class="img-language" src="assets/image/index/vi.svg" alt="">Vietnamese</a></div>
+                                <div class="menu-dropdown-item-content" onclick="eng()"><a><img class="img-language" src="assets/image/index/us.svg" alt="">English</a></div>
+                                <div class="menu-dropdown-item-content" onclick="vi()"><a><img class="img-language" src="assets/image/index/vi.svg" alt="">Vietnamese</a></div>
                             </div>
+                            <script>
+                                function eng(){
+                                    $(':root').attr('lang', 'en');
+                                }
+                                function vi(){
+                                    $(':root').attr('lang', 'vi');
+                                }
+                            </script>
                         </div>
                     </li>
                 </ul>
@@ -121,8 +129,10 @@
     <!-- banner -->
     <div class="banner" style="background-image: url(assets/image/service/bg.png);">
         <div class="text">
-            <h1>Our Services</h1>
-            <p>BYECO<sub>2</sub> offer the most cost-effective and comprehensive services for your businesses</p>
+            <h1 lang="en">Our Services</h1>
+            <h1 lang="vi">Dịch vụ của chúng tôi</h1>
+            <p lang="en">Tailored services for your business' needs: cost-effective and comprehensive solutions by BYECO<sub>2</sub></p>
+            <p lang="vi">BYECO<sub>2</sub> mang đến cho các doanh nghiệp giải pháp toàn diện và có hiệu quả kinh tế nhất.</p>
         </div>
     </div>
 
@@ -135,27 +145,31 @@
         </ul>
         <div class="filters-content">
             <div class="row grid">
-                <div class="all category1" onclick="window.location.href='service-detail.html'">
+                <div class="all category1" onclick="window.location.href='service-detail-energy-auditing.html'">
                     <div class="single-menu">
                         <div class="title-wrap d-flex justify-content-between">
                             <img src="assets/image/index/service4.png" alt="" class="img-service-hover">
                             <div>
                                 <img src="assets/image/index/service1.svg" alt="">
-                                <h4>Energy Auditing</h4>
-                                <p style="font-size: 11px;">Energy Auditing is the very first activity that is considered an integral part of business operations. However, due to their intrinsic complexity, the issue has not been systematically applied. In the context of climate change, energy-related activities would be an imperative in their strategic portfolio.</p>
-                                <p style="font-size: 11px;padding-top: 0px;;">BYECO2 provides a package of energy audit services according to the size and scope of companies, including site assessment, preliminary energy audit, detailed audit, investment-grade audit.</p>
+                                <h4 lang="en">Energy Auditing</h4>
+                                <h4 lang="vi">Kiểm toán năng lượng</h4>
+                                <p lang="en" style="font-size: 11px;">Precision Audits, Enhanced Performance: BYECO2- Tailored Solutions for Site Assessment and Comprehensive Audits.</p>
+                                <p lang="vi" style="font-size: 11px;">Kiểm toán tùy chỉnh, Hiệu suất nâng cao: BYECO2 - Giải pháp đặc biệt cho Đánh giá hiện trường và Kiểm toán chi tiết.</p>
+                                <!-- <p style="font-size: 11px;padding-top: 0px;;">BYECO2 provides a package of energy audit services according to the size and scope of companies, including site assessment, preliminary energy audit, detailed audit, investment-grade audit.</p> -->
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="all category2" onclick="window.location.href='service-detail.html'">
+                <div class="all category2" onclick="window.location.href='service-detail-digitalisation-of-energy-management.html'">
                     <div class="single-menu">
                         <div class="title-wrap d-flex justify-content-between">
                             <img src="assets/image/index/service5.png" alt="" class="img-service-hover">
                             <div>
                                 <img src="assets/image/index/service2.svg" alt="">
-                                <h4>Digitalized Energy Management</h4>
-                                <p style="font-size: 11px;">BYECO2 provide consultancy service on developing an ISO 5001:2018 Energy Management System managed by One-Platform where the owner and operators can visualize and monitor energy-related data via computer and mobile to make their informed decision-making convenient.</p>
+                                <h4 lang="en">Digitalisation of Energy Management</h4>
+                                <h4 lang="vi">Quản lý năng lượng trên nền tảng số</h4>
+                                <p lang="en" style="font-size: 11px;">Energizing Efficiency: BYECO2 - Streamlining Energy Management with ISO 50001:2018 and One-Platform Solutions for Data-Driven Decisions.</p>
+                                <p lang="vi" style="font-size: 11px;">Năng lượng cho Hiệu suất: BYECO2- Tối ưu Quản lý Năng lượng với tư vấn Hệ thống Quản lý Năng lượng ISO 50001:2018 và Giải pháp One-Platform thuận tiện cho việc hiển thị dữ liệu và ra quyết định có căn cứ.</p>
                             </div>
                         </div>
                     </div>
@@ -166,48 +180,55 @@
                             <img src="assets/image/index/service6.png" alt="" class="img-service-hover">
                             <div>
                                 <img src="assets/image/index/service3.svg" alt="">
-                                <h4>Feasibility Studies</h4>
+                                <h4 lang="en">Feasibility Studies</h4>
+                                <h4 lang="vi">Feasibility Studies</h4>
                                 <p style="font-size: 11px;">BYECO2 to conduct bankable feasibility studies for energy efficiency improvement and renewable energy development projects. They cover technical and financial feasibility assessment of proposed solutions.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="all category1" onclick="window.location.href='service-detail.html'">
+                <div class="all category1" onclick="window.location.href='service-detail-digitalisation-of-carbon-footprint-management.html'">
                     <div class="single-menu">
                         <div class="title-wrap d-flex justify-content-between">
                             <img src="assets/image/index/service4.png" alt="" class="img-service-hover">
                             <div>
                                 <img src="assets/image/index/service1.svg" alt="">
-                                <h4 style="margin: 10px;">Digitalized Carbon Footprint Management</h4>
-                                <p style="font-size: 11px;padding-bottom: 5px;">Making corporate GHG emission accounting and reporting to comply with the law and regulations.</p>
-                                <p style="font-size: 11px;padding-top: 0px;">Building up a smart exhaustive carbon footprint management for the whole supply chain that is transparent to any stakeholders.</p>
+                                <h4 lang="en" style="margin: 10px;">Digitalisation of Carbon Footprint Management</h4>
+                                <h4 lang="vi" style="margin: 10px;">Quản lý  dấu vết các-bon trên nền tảng số</h4>
+                                <p lang="en" style="font-size: 11px;padding-bottom: 5px;">Empowering Sustainable Accountability: BYECO2 - Compliant GHG Emission Accounting and Transparent Carbon Footprint Management.</p>
+                                <p lang="vi" style="font-size: 11px;padding-bottom: 5px;">Thúc đẩy Trách nhiệm Bền vững: BYECO2 - Kiểm toán Phát thải KHG tuân thủ và Quản lý Dấu vết Carbon minh bạch.</p>
+                                <!-- <p style="font-size: 11px;padding-top: 0px;">Building up a smart exhaustive carbon footprint management for the whole supply chain that is transparent to any stakeholders.</p> -->
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="all category2" onclick="window.location.href='service-detail.html'">
+                <div class="all category2" onclick="window.location.href='service-detail-sustainability-transition.html'">
                     <div class="single-menu">
                         <div class="title-wrap d-flex justify-content-between">
                             <img src="assets/image/index/service5.png" alt="" class="img-service-hover">
                             <div>
                                 <img src="assets/image/index/service2.svg" alt="">
-                                <h4>Sustainability Transition</h4>
-				<p style="font-size: 11px;padding-bottom: 5px;">Integrating renewable energies into customers' facilities and building corporate green portfolios</p>
+                                <h4 lang="en">Sustainability Transition</h4>
+                                <h4 lang="vi">Kinh doanh bền vững</h4>
+				                <p lang="en" style="font-size: 11px;padding-bottom: 5px;">Driving ESG Excellence: BYECO2 - Digitally Empowering Carbon Management for Sustainable Supply Chains.</p>
+                                <p lang="vi" style="font-size: 11px;padding-bottom: 5px;">Khơi dậy Sự xuất sắc về ESG: BYECO2 - Đẩy mạnh Quản lý Carbon số hóa cho Chuỗi cung ứng Bền vững.</p>
                                 <!-- <p style="font-size: 11px;padding-top: 0px;">-	Making the corporate carbon assets available to international carbon market through Emission Trading Schemes.</p> -->
                             </div>
                         </div>
                     </div>
                 </div>
-		        <div class="all category2" onclick="window.location.href='service-detail.html'">
+		        <div class="all category2" onclick="window.location.href='service-detail-carbon-trading.html'">
                     <div class="single-menu">
                         <div class="title-wrap d-flex justify-content-between">
                             <img src="assets/image/index/service5.png" alt="" class="img-service-hover">
                             <div>
                                 <img src="assets/image/index/service2.svg" alt="">
-                                <h4>Carbon Trading</h4>
-                                <p style="font-size: 11px;padding-bottom: 5px;">Providing cost-effective strategies for reducing carbon emissions through flexible mechanisms in the upcoming domestic carbon market.</p>
-                                <p style="font-size: 11px;padding-top: 0px;">Making the corporate carbon assets available to international carbon market through Emission Trading Schemes.</p>
+                                <h4 lang="en">Carbon Trading</h4>
+                                <h4 lang="vi">Trao đổi tín chỉ các-bon</h4>
+                                <p lang="en" style="font-size: 11px;padding-bottom: 5px;">Carbon Value Unleashed: BYECO2 - Maximizing Emission Reductions in Domestic Carbon Market & Global Trading Schemes.</p>
+                                <p lang="vi" style="font-size: 11px;padding-bottom: 5px;">Khai thác Giá trị Carbon: BYECO2 - Tối đa hóa Giảm phát thải trong Thị trường Carbon Trong nước và Hệ thống Giao dịch Toàn cầu.</p>
+                                <!-- <p style="font-size: 11px;padding-top: 0px;">Making the corporate carbon assets available to international carbon market through Emission Trading Schemes.</p> -->
                             </div>
                         </div>
                     </div>
