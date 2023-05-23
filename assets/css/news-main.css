@@ -975,3 +975,8 @@ input, textarea {
     min-width: 60px;
   }
 }
+@media screen and (max-width: 345px) {
+  .article-categories .article .pagination div a {
+    width: 30px;
+  }
+}

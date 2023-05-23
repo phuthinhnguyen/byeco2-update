@@ -627,3 +627,17 @@ input,textarea{
         }
     }
 }
+@media screen and (max-width:345px){
+    .article-categories{
+        .article{
+            .pagination{
+                div{
+                    a{
+                        width: 30px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
