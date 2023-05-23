@@ -165,6 +165,7 @@ body{
         }
     }
 }
+
 @media screen and (max-width:575px){
     .filters-container{
         padding: 10px;
@@ -190,5 +191,32 @@ body{
     }
     .pagination{
         margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:387px){
+    .filters-container{
+        .filters-wrap{
+            width: 300px;
+        }
+    }
+}
+@media screen and (max-width:345px){
+    .filters-container{
+        .filters-wrap{
+            width: 250px;
+            li{
+                padding: 5px;
+                font-size: 14px;
+                
+            }
+        }
+    }
+    .pagination{
+        div{
+            a{
+                width: 30px;
+            }
+        }
     }
 }
