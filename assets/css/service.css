@@ -70,23 +70,20 @@ input, textarea {
 }
 .filters-container .filters-content {
   margin-top: 50px;
-}
-.filters-container .filters-content .row {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto auto;
   position: relative;
+  width: 100%;
 }
-.filters-container .filters-content .row .all {
+.filters-container .filters-content .all {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  flex: 0 0 50%;
-  max-width: 33%;
-  position: absolute;
-  left: 0;
-  top: 0;
+  position: relative;
+  cursor: pointer;
 }
-.filters-container .filters-content .row .all .single-menu .title-wrap {
+.filters-container .filters-content .all .single-menu .title-wrap {
+  width: 100%;
   display: flex !important;
   justify-content: space-around !important;
   flex-direction: column;
@@ -95,46 +92,40 @@ input, textarea {
   text-align: center;
   box-shadow: 0px 10px 30px 0px rgba(153, 153, 153, 0.2);
 }
-.filters-container .filters-content .row .all .single-menu .title-wrap .img-service-hover {
+.filters-container .filters-content .all .single-menu .title-wrap .img-hover {
   position: absolute;
   opacity: 0;
-  width: 100%;
-  height: 100%;
-  transition: 0.5s;
-  left: 3%;
+  max-width: 100%;
+  max-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-46%, -50%);
 }
-.filters-container .filters-content .row .all .single-menu .title-wrap div {
-  width: 100%;
-  text-align: center;
-  padding: 0 10px;
+.filters-container .filters-content .all .single-menu .title-wrap div {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+  align-items: center;
 }
-.filters-container .filters-content .row .all .single-menu .title-wrap div img {
+.filters-container .filters-content .all .single-menu .title-wrap div p {
+  max-width: 80%;
+  margin: auto;
+}
+.filters-container .filters-content .all .single-menu .title-wrap div h4 {
+  max-width: 80%;
+  margin: auto;
+}
+.filters-container .filters-content .all .single-menu .title-wrap div img {
   width: 74px;
   height: 64px;
-  margin-bottom: 20px;
 }
-.filters-container .filters-content .row .all .single-menu .title-wrap div h3 {
-  font-family: "Anybody";
-  font-weight: bold;
-}
-.filters-container .filters-content .row .all .single-menu .title-wrap div p {
-  color: #9AA0A0;
-  text-align: center;
-  padding: 10px;
-}
-.filters-container .filters-content .row .all .single-menu .title-wrap:hover {
-  color: #FAFAFC;
-  cursor: pointer;
-}
-.filters-container .filters-content .row .all .single-menu .title-wrap:hover .img-service-hover {
+.filters-container .filters-content .all:hover .single-menu .title-wrap .img-hover {
   opacity: 1;
-  z-index: -1;
 }
-.filters-container .filters-content .row .all .single-menu .title-wrap:hover div p {
-  color: #FAFAFC;
-}
-.filters-container .filters-content .row .all .single-menu .title-wrap div p {
-  padding: 20px;
+.filters-container .filters-content .all:hover .single-menu .title-wrap div p, .filters-container .filters-content .all:hover .single-menu .title-wrap div h4 {
+  color: white;
 }
 
 .pagination {
@@ -172,25 +163,42 @@ input, textarea {
   color: #E0E0E0;
 }
 
-@media screen and (max-width: 991px) {
-  .filters-container {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .filters-container .filters-content .row {
-    max-width: 99%;
-    margin: auto;
-  }
-  .filters-container .filters-content .row .all {
-    max-width: 48%;
+@media screen and (max-width: 1100px) {
+  .filters-container .filters-content {
+    grid-template-columns: auto auto;
   }
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 768px) {
+  .filters-container .filters-wrap #all-responsive {
+    display: none;
+  }
+  .filters-container .filters-content {
+    grid-template-columns: auto;
+  }
+}
+@media screen and (max-width: 500px) {
   .filters-container {
     padding-left: 10px;
     padding-right: 10px;
   }
-  .filters-container .filters-wrap #all-responsive {
-    display: none;
+  .filters-container .filters-content {
+    width: 96%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 345px) {
+  .filters-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .filters-container .filters-content {
+    width: 96%;
+    margin: auto;
+  }
+  .filters-container .filters-content .all .single-menu .title-wrap div {
+    row-gap: 5px;
+  }
+  .filters-container .filters-content .all .single-menu .title-wrap div h4 {
+    font-size: 18px;
   }
 }

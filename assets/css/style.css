@@ -1651,3 +1651,8 @@ footer .footer-bottom p {
     padding: 5px;
   }
 }
+@media screen and (max-width: 327px) {
+  footer .footer-top .item2 .navigation {
+    margin-top: 22px;
+  }
+}

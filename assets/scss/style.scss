@@ -1677,7 +1677,6 @@ footer{
    
 }
 @media screen and (max-width:380px){
-   
     .image-slide{
         .slide-button{
             left: 20%;
@@ -1692,5 +1691,16 @@ footer{
         }
     }
    
+}
+@media screen and (max-width:327px){
+    footer{
+        .footer-top{
+            .item2{
+                .navigation{
+                    margin-top: 22px;
+                }
+            }
+        }
+    }
 }
 
