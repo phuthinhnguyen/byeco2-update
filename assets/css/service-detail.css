@@ -110,12 +110,22 @@ input, textarea {
   .service-detail-content {
     padding: 100px 50px;
   }
+  .banner {
+    padding-left: 50px;
+  }
 }
 @media screen and (max-width: 991px) {
+  .service-detail-content h2 {
+    text-align: center;
+  }
   .service-detail-content .content-wrap {
     display: block;
   }
   .service-detail-content .content-wrap .text {
     margin-top: 20px;
+  }
+  .banner {
+    justify-content: center;
+    padding: 20px;
   }
 }

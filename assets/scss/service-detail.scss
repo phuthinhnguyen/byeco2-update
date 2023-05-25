@@ -63,15 +63,25 @@ input,textarea{
     .service-detail-content{
         padding: 100px 50px;
     }
+    .banner{
+        padding-left: 50px;
+    }
 }
 @media screen and (max-width:991px){
     .service-detail-content{
+        h2{
+            text-align: center;
+        }
         .content-wrap{
             display: block;
             .text{
                 margin-top: 20px;
             }
         }
+    }
+    .banner{
+        justify-content: center;
+        padding: 20px;
     }
 }
 
