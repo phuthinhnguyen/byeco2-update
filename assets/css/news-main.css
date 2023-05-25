@@ -225,6 +225,14 @@ input, textarea {
        column-gap: 16px;
   margin-top: 20px;
 }
+.banner .center .last .item-mobile .content .item-mobile-content-img {
+  width: 100%;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
 .banner .center .last .item-mobile .content .text {
   color: #9AA0A0;
 }
@@ -959,6 +967,24 @@ input, textarea {
   }
   .article-categories .article .head-tablet div a {
     display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .banner .center .last .item-mobile {
+    cursor: pointer;
+  }
+  .banner .center .last .item-mobile .content {
+    display: block;
+  }
+  .banner .center .last .item-mobile .content .item-mobile-content-img {
+    height: 285px;
+    margin-bottom: 20px;
+  }
+  .banner .center .last .item-mobile .content p {
+    color: #E0E0E0;
+  }
+  .banner .center .last .item-mobile .content p:last-of-type {
+    color: #9AA0A0;
   }
 }
 @media screen and (max-width: 450px) {

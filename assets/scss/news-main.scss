@@ -202,6 +202,14 @@ input,textarea{
                 display: flex;
                 column-gap: 16px;
                 margin-top: 20px;
+                .item-mobile-content-img{
+                    width: 100%;
+                    height: 150px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    border-radius: 20px;
+                }
                .text{
                     color: $dark-03;
                     p:first-of-type{
@@ -595,6 +603,30 @@ input,textarea{
         }
     }
     
+}
+@media screen and (max-width:500px){
+    .banner{
+        .center{
+            .last{
+                .item-mobile{
+                    cursor: pointer;
+                    .content{
+                        display: block;
+                        .item-mobile-content-img{
+                            height: 285px;
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            color: $dark-04;
+                            &:last-of-type{
+                                color: $dark-03;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width:450px){
     .videos{
