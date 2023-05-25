@@ -193,6 +193,11 @@ input,textarea{
         }
         .item-mobile{
             display: none;
+            hr{
+                color: white;
+                margin-top: 35px;
+                margin-bottom: 35px;
+            }
             h5{
                 @include font($fontAnybody);
                 font-weight: bold;
@@ -307,7 +312,7 @@ input,textarea{
                     height: 100%;
                 }
                 div{
-                  
+                    width: 50%;
                     @include news-text;
                     position: static;
                     p:first-of-type{
@@ -520,6 +525,19 @@ input,textarea{
     margin-top: 80px;
 }
 
+@media screen and (max-width:1200px){
+    .article-categories{
+        .article{
+            .content{
+                .item{
+                    img{
+                        max-width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width:991px){
     .banner{
         padding-left: 20px;
@@ -566,6 +584,25 @@ input,textarea{
     }
  
   
+}
+
+@media screen and (max-width:768px) {
+    .article-categories{
+        .article{
+            .content{
+                .item{
+                    display: block;
+                    img{
+                        max-width: 100%;
+                    }
+                    div{
+                        min-width: 100%;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:575px){
