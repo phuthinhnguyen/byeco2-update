@@ -1136,6 +1136,8 @@ nav .row .offcanvas .offcanvas-header-bottom .language img:hover {
 }
 .content-theytrustus .content-theytrustus-bottom img {
   margin: auto;
+  width: 120px;
+  height: 120px;
 }
 
 .content-getintouch {
@@ -1373,6 +1375,9 @@ footer .footer-bottom p {
   footer .footer-top .item2 .contactus h4, footer .footer-top .item2 .navigation h4, footer .footer-top .item2 .quicklinks h4 {
     color: #EA6B39;
   }
+  .content-theytrustus .content-theytrustus-bottom {
+    padding: 80px 10px;
+  }
 }
 @media screen and (max-width: 1199px) {
   nav .row .center ul li {
@@ -1554,6 +1559,14 @@ footer .footer-bottom p {
   .image-slide .slide-button {
     left: 35%;
   }
+  .content-theytrustus .content-theytrustus-bottom {
+    grid-template-columns: auto auto;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+  .content-theytrustus .content-theytrustus-bottom .item-img-3 {
+    margin-top: 90px;
+  }
   .content-theytrustus .content-theytrustus-bottom .item .img-none2 {
     display: none;
   }
@@ -1633,9 +1646,6 @@ footer .footer-bottom p {
     padding-left: 30px;
     padding-right: 30px;
   }
-  .content-theytrustus .content-theytrustus-bottom {
-    grid-template-columns: auto auto;
-  }
   .content-theytrustus .content-theytrustus-bottom .order4, .content-theytrustus .content-theytrustus-bottom .order5 {
     display: none;
   }
@@ -1675,6 +1685,13 @@ footer .footer-bottom p {
   .content-featuredproject .content-featuredproject-content .item div img {
     height: 280px;
   }
+  .content-theytrustus .content-theytrustus-bottom {
+    row-gap: 0;
+  }
+  .content-theytrustus .content-theytrustus-bottom img {
+    width: 90px;
+    height: 90px;
+  }
 }
 @media screen and (max-width: 380px) {
   .image-slide .slide-button {
@@ -1686,6 +1703,15 @@ footer .footer-bottom p {
   }
   .content-featuredproject .content-featuredproject-content .item div img {
     height: 250px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .content-theytrustus .content-theytrustus-bottom {
+    padding: 40px 0;
+  }
+  .content-theytrustus .content-theytrustus-bottom img {
+    width: 60px;
+    height: 60px;
   }
 }
 @media screen and (max-width: 327px) {
