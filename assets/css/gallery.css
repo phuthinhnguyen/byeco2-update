@@ -106,11 +106,11 @@ body {
   height: 95%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .filters-container .filters-content .row .all .single-menu .title-wrap div img {
   width: 100%;
-  height: 80%;
+  border-radius: 20px;
   transition: 0.3s;
 }
 .filters-container .filters-content .row .all .single-menu .title-wrap div h6 {

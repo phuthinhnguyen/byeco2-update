@@ -282,7 +282,7 @@ input,textarea{
 // ourexpertise
 .ourexpertise{
     @include content-top;
-    margin-top: 120px;
+    margin-top: 140px;
     p{
         &:not(:last-of-type){
             color: $primary-coral-50;
@@ -297,10 +297,15 @@ input,textarea{
     margin: auto;
     padding: $padding;
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
+    column-gap: 30px;
+    row-gap: 30px;
+    // display: grid;
+    // grid-template-columns: auto auto auto auto auto;
+    // justify-content: space-around;
     margin-top: 50px;
-    max-height: 200px;
     .item{
         height: 100%;
         text-align: center;
@@ -339,7 +344,7 @@ input,textarea{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 120px;
+    margin-top: 30px;
     padding-top: 80px;
     padding-bottom: 80px;
     column-gap: 20px;
@@ -347,15 +352,17 @@ input,textarea{
         width: 70%;
         display: grid;
         grid-template-columns: auto auto auto;
+        padding-top: 20px;
         row-gap: 50px;
         order: 0;
         img{
             margin: auto;
+            max-width: 60px;
         }
     }
     a{
         width: 5px;
-        height: 120px;
+        height: 160px;
         background-color: $state-warning-01;
         margin-right: 10px;     
     }
@@ -390,6 +397,14 @@ input,textarea{
         }
     }
 }
+@media screen and (max-width:1350px) {
+    .slide{
+        justify-content: center;
+    }
+    .ourexpertise{
+        margin-top: 50px;
+    }
+}
 @media screen and (max-width:1210px){
     .aboutus-content1{
         .bottom{
@@ -404,12 +419,21 @@ input,textarea{
         }
     }
 }
+
 @media screen and (max-width:1180px){
     .aboutus-content1{
         .bottom{
            width: 35%; 
         }
     }
+}
+@media screen and (max-width:1150px){
+    // .slide{
+    //     justify-content: center;
+    // }
+    // .ourexpertise{
+    //     margin-top: 50px;
+    // }
 }
 @media screen and (max-width:1100px) {
     .aboutus-content1{
@@ -467,10 +491,10 @@ input,textarea{
         padding-left: 20px;
         padding-right: 20px;
     }
-    .slide{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+    // .slide{
+    //     padding-left: 20px;
+    //     padding-right: 20px;
+    // }
     .ourclients{
         padding-left: 20px;
         padding-right: 20px;
@@ -510,18 +534,30 @@ input,textarea{
         margin-top: 0;
     }
 }
-@media screen and (max-width:575px) {
-    .slide{
-        justify-content: center;
-        .item{
-            &:first-of-type{
-                display: none;
-            }
-            &:last-of-type{
-                display: none;
+@media screen and (max-width:701px) {
+    .ourclients{
+        .right{
+            // p{
+            //     font-size: 12px;
+            // }
+            h1{
+                font-size: 22px;
             }
         }
     }
+}
+@media screen and (max-width:575px) {
+    // .slide{
+    //     justify-content: center;
+    //     .item{
+    //         &:first-of-type{
+    //             display: none;
+    //         }
+    //         &:last-of-type{
+    //             display: none;
+    //         }
+    //     }
+    // }
     .ourclients{
         text-align: center;
         flex-direction: column;
@@ -538,6 +574,9 @@ input,textarea{
            order: 0;
            margin-top: -50px;
            margin-bottom: 40px;
+           h1{
+                font-size: 32px;
+           }
         }
        
     }
@@ -574,6 +613,17 @@ input,textarea{
             display: flex;
             flex-direction: column;
             justify-content: center;
+        }
+    }
+}
+@media screen and (max-width:350px) {
+    .aboutus-content1{
+        .center{
+            .item{
+                h4{
+                    font-size: 15px;
+                }
+            }
         }
     }
 }

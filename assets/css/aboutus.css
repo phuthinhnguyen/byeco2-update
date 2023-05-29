@@ -269,7 +269,7 @@ input, textarea {
   text-align: center;
   justify-content: space-between;
   align-items: center;
-  margin-top: 120px;
+  margin-top: 140px;
 }
 .ourexpertise h1 {
   color: #20A049;
@@ -297,10 +297,13 @@ input, textarea {
   margin: auto;
   padding: 0 50px;
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 30px;
   margin-top: 50px;
-  max-height: 200px;
 }
 .slide .item {
   height: 100%;
@@ -338,7 +341,7 @@ input, textarea {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 120px;
+  margin-top: 30px;
   padding-top: 80px;
   padding-bottom: 80px;
   -moz-column-gap: 20px;
@@ -348,15 +351,17 @@ input, textarea {
   width: 70%;
   display: grid;
   grid-template-columns: auto auto auto;
+  padding-top: 20px;
   row-gap: 50px;
   order: 0;
 }
 .ourclients .left img {
   margin: auto;
+  max-width: 60px;
 }
 .ourclients a {
   width: 5px;
-  height: 120px;
+  height: 160px;
   background-color: #F5AF0B;
   margin-right: 10px;
 }
@@ -385,6 +390,14 @@ input, textarea {
   }
   .aboutus-content1 .bottom {
     width: 45%;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .slide {
+    justify-content: center;
+  }
+  .ourexpertise {
+    margin-top: 50px;
   }
 }
 @media screen and (max-width: 1210px) {
@@ -450,10 +463,6 @@ input, textarea {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .slide {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   .ourclients {
     padding-left: 20px;
     padding-right: 20px;
@@ -487,16 +496,12 @@ input, textarea {
     margin-top: 0;
   }
 }
+@media screen and (max-width: 701px) {
+  .ourclients .right h1 {
+    font-size: 22px;
+  }
+}
 @media screen and (max-width: 575px) {
-  .slide {
-    justify-content: center;
-  }
-  .slide .item:first-of-type {
-    display: none;
-  }
-  .slide .item:last-of-type {
-    display: none;
-  }
   .ourclients {
     text-align: center;
     flex-direction: column;
@@ -514,6 +519,9 @@ input, textarea {
     order: 0;
     margin-top: -50px;
     margin-bottom: 40px;
+  }
+  .ourclients .right h1 {
+    font-size: 32px;
   }
   #section-counter {
     height: 500px;
@@ -540,5 +548,10 @@ input, textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 350px) {
+  .aboutus-content1 .center .item h4 {
+    font-size: 15px;
   }
 }
