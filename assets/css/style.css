@@ -1233,6 +1233,7 @@ footer {
   max-width: 100%;
   margin: auto;
   padding-top: 80px;
+  padding-bottom: 40px;
   background-color: #060810;
 }
 footer .footer-top {
@@ -1308,7 +1309,6 @@ footer .footer-top .item2 .navigation h4, footer .footer-top .item2 .quicklinks 
   font-weight: bold;
 }
 footer .footer-top .item2 .navigation .content, footer .footer-top .item2 .quicklinks .content {
-  height: 196px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1323,6 +1323,9 @@ footer .footer-top .item2 .navigation .content a, footer .footer-top .item2 .qui
 }
 footer .footer-top .item2 .navigation .content a:hover, footer .footer-top .item2 .quicklinks .content a:hover {
   color: #EA6B39;
+}
+footer .footer-top .item2 .navigation .content a:not(:first-of-type), footer .footer-top .item2 .quicklinks .content a:not(:first-of-type) {
+  margin-top: 20px;
 }
 footer hr {
   margin-top: 40px;
@@ -1375,6 +1378,9 @@ footer .footer-bottom p {
   footer .footer-top .item2 .contactus h4, footer .footer-top .item2 .navigation h4, footer .footer-top .item2 .quicklinks h4 {
     color: #EA6B39;
   }
+  footer .footer-top .item2 .contactus .content .app, footer .footer-top .item2 .navigation .content .app, footer .footer-top .item2 .quicklinks .content .app {
+    width: 50%;
+  }
   .content-theytrustus .content-theytrustus-bottom {
     padding: 80px 10px;
   }
@@ -1406,6 +1412,9 @@ footer .footer-bottom p {
   }
   footer .footer-top .item2 {
     margin-top: 60px;
+  }
+  footer .footer-top .item2 .quicklinks .content .app {
+    width: 30%;
   }
 }
 @media screen and (max-width: 1070px) {
@@ -1584,6 +1593,9 @@ footer .footer-bottom p {
   .content-featuredproject .content-featuredproject-content .item div img {
     height: 300px;
   }
+  footer .footer-top .item2 .quicklinks .content .app {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 650px) {
   .content-featuredproject .content-featuredproject-content {
@@ -1599,6 +1611,9 @@ footer .footer-bottom p {
   }
   footer .footer-top .item2 .quicklinks {
     margin-top: 40px;
+  }
+  footer .footer-top .item2 .quicklinks .content .app {
+    width: 30%;
   }
 }
 @media screen and (max-width: 575px) {
@@ -1691,6 +1706,9 @@ footer .footer-bottom p {
   .content-theytrustus .content-theytrustus-bottom img {
     width: 90px;
     height: 90px;
+  }
+  footer .footer-top .item2 .quicklinks .content .app {
+    width: 40%;
   }
 }
 @media screen and (max-width: 380px) {

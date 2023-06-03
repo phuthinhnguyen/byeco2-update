@@ -1081,6 +1081,7 @@ footer{
     max-width: $max-width-homepage;
     margin: auto;
     padding-top: 80px;
+    padding-bottom: 40px;
     background-color: $footer-background-color;
     .footer-top{
         // height: 307px;
@@ -1160,7 +1161,7 @@ footer{
                     font-weight: bold;
                 }
                 .content{
-                    height: 196px;
+                    // height: 196px;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
@@ -1168,12 +1169,16 @@ footer{
                         display: block;
                         text-decoration: none;
                         color: $footer-color;
+                  
                         @include font($fontWorksans);
                         font-size: 17px;
                         transition: 0.3s;
                         &:hover{
                             color: $primary-coral-50;
-                        }   
+                        }  
+                        &:not(:first-of-type){
+                            margin-top: 20px;
+                        } 
                     }
                 }
             }
@@ -1248,6 +1253,11 @@ footer{
                     h4{
                         color: $primary-coral-50;
                     }
+                    .content{
+                        .app{
+                            width: 50%;
+                        }
+                    }
                 }
             }
         }
@@ -1313,6 +1323,13 @@ footer{
             display: block;
             .item2{
                margin-top:60px;
+               .quicklinks{
+                .content{
+                    .app{
+                        width: 30%;
+                    }
+                }
+               }
             }
         }
     }
@@ -1546,7 +1563,6 @@ footer{
             left: 35%;
         }
     }
-    
     .content-theytrustus{
         .content-theytrustus-bottom{
             grid-template-columns: auto auto;
@@ -1585,6 +1601,19 @@ footer{
             }
         }
     }
+    footer{
+        .footer-top{
+            .item2{
+                .quicklinks{
+                 .content{
+                     .app{
+                         width: 50%;
+                     }
+                 }
+                }
+             }
+        }
+    }
 }
 @media screen and (max-width:650px){
     .content-featuredproject{
@@ -1607,6 +1636,11 @@ footer{
                 display: block;
                 .quicklinks{
                     margin-top: 40px;
+                    .content{
+                        .app{
+                            width: 30%;
+                        }
+                    }
                 }
             }
         }
@@ -1783,6 +1817,19 @@ footer{
             img{
                 width: 90px;
                 height: 90px;
+            }
+        }
+    }
+    footer{
+        .footer-top{
+            .item2{
+                .quicklinks{
+                    .content{
+                        .app{
+                            width: 40%;
+                        }
+                    }
+                }
             }
         }
     }
